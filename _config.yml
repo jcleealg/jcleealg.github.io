@@ -17,7 +17,7 @@ timezone: Asia/Taipei # 請填入你的時區（如 Asia/Taipei）
 
 title: jcleealg # 網站主標題，會顯示在瀏覽器標籤與首頁
 
-tagline: Turning coffee into code, and theorems into tools # 網站副標題，顯示於主標題下方
+tagline: From coffee to code, from theorems to tools. # 網站副標題，顯示於主標題下方
 
 description: Fueled by coffee, this site documents a journey of transforming abstract mathematical theorems into practical, problem-solving tools. Come see what's brewing. # 網站描述，會用於 SEO meta 與 RSS feed
 
