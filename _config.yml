@@ -61,7 +61,7 @@ webmaster_verifications:
 # Web Analytics Settings # 網站流量分析設定
 analytics:
   google:
-    id: # Google Analytics 追蹤碼
+    id: G-P00ZW558LN # Google Analytics 追蹤碼
   goatcounter:
     id: # GoatCounter 追蹤碼
   umami:
