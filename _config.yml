@@ -1,211 +1,209 @@
-# The Site Configuration
+# The Site Configuration # 網站設定檔，設定整個 Jekyll 網站的行為
 
-# Import the theme
-theme: jekyll-theme-chirpy
+# Import the theme # 匯入主題，這裡使用 chirpy 主題
+theme: jekyll-theme-chirpy # 網站主題名稱
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm # 網站語言設定
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed, # 若與 _data/locales 下的檔案同名，則會自動切換語系
+# otherwise, the layout language will use the default value of 'en'. # 否則預設為英文
+lang: en # 網站語言（如 zh-TW、en）
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker # 設定網站時區
+timezone: Asia/Taipei # 請填入你的時區（如 Asia/Taipei）
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md # SEO 設定區塊
 # ↓ --------------------------
 
-title: Chirpy # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+title: jcleealg # 網站主標題，會顯示在瀏覽器標籤與首頁
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+tagline: Turning coffee into code, and theorems into tools # 網站副標題，顯示於主標題下方
 
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+description: Fueled by coffee, this site documents a journey of transforming abstract mathematical theorems into practical, problem-solving tools. Come see what's brewing. # 網站描述，會用於 SEO meta 與 RSS feed
 
-github:
-  username: github_username # change to your GitHub username
+# Fill in the protocol & hostname for your site. # 設定網站網址
+# E.g. 'https://username.github.io', note that it does not end with a '/'. # 範例格式
+url: "https://jcleealg.github.io" # 你的網站網址（不以 / 結尾）
 
-twitter:
-  username: twitter_username # change to your Twitter username
 
-social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+github: # GitHub 設定區塊
+  username: jcleealg # 你的 GitHub 帳號
+
+
+# twitter: # Twitter 設定區塊
+#   username: # 你的 Twitter 帳號
+
+
+social: # 社群資訊設定
+  name: jcleealg # 你的全名，會顯示於頁腳與文章作者
+  email: # 你的電子郵件
+  links: # 社群連結清單
+    # - https://twitter.com/username # 你的 Twitter 連結
+    - https://github.com/jcleealg # 你的 GitHub 連結
+    # - https://www.facebook.com/username # 其他社群（可取消註解）
     # - https://www.linkedin.com/in/username
 
-# Site Verification Settings
+
+# Site Verification Settings # 站長驗證碼設定（用於搜尋引擎驗證）
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+  google: # Google 驗證碼
+  bing: # Bing 驗證碼
+  alexa: # Alexa 驗證碼
+  yandex: # Yandex 驗證碼
+  baidu: # 百度驗證碼
+  facebook: # Facebook 驗證碼
+
 
 # ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# The end of `jekyll-seo-tag` settings # SEO 設定結束
 
-# Web Analytics Settings
+
+# Web Analytics Settings # 網站流量分析設定
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: # Google Analytics 追蹤碼
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: # GoatCounter 追蹤碼
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id: # Umami 追蹤碼
+    domain: # Umami 網域
   matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
+    id: # Matomo 追蹤碼
+    domain: # Matomo 網域
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id: # Cloudflare Web Analytics token
   fathom:
-    id: # fill in your Fathom Site ID
+    id: # Fathom Site ID
 
-# Page views settings
+
+# Page views settings # 網頁瀏覽次數設定
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: # 現在僅支援 goatcounter
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
-#
+
+# Prefer color scheme setting. # 預設顏色主題
+# 留空則跟隨系統，側邊欄左下可切換
+# 可選 light（亮色）或 dark（暗色）
 theme_mode: # [light | dark]
 
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
+
+# The CDN endpoint for media resources. # 媒體資源 CDN 設定
+# 設定後，所有以 / 開頭的媒體路徑都會加上 CDN 網址
 cdn:
 
-# the avatar on sidebar, support local or CORS resources
-avatar:
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+# the avatar on sidebar, support local or CORS resources # 側邊欄頭像設定
+avatar: /assets/img/SteppeCat_01.jpg
 
-# boolean type, the global switch for TOC in posts.
-toc: true
 
-comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
+# The URL of the site-wide social preview image used in SEO `og:image` meta tag. # SEO 預覽圖設定
+# 可被單篇文章的 page.image 覆蓋
+social_preview_image: # 網站預設預覽圖網址
+
+
+# boolean type, the global switch for TOC in posts. # 全域 TOC（目錄）開關
+toc: true # 是否在文章顯示目錄
+
+
+comments: # 留言系統設定
+  provider: # 留空為關閉，可選 disqus、utterances、giscus
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
+    shortname: # Disqus 短網址名稱
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
+    repo: # utterances 對應的 GitHub repo
+    issue_term: # 對應的 issue 條件
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    repo: # giscus 對應的 GitHub repo
+    repo_id: # giscus repo id
+    category: # giscus 分類
+    category_id: # giscus 分類 id
+    mapping: # 對應方式，預設 pathname
+    strict: # 是否嚴格對應
+    input_position: # 留言框位置
+    lang: # 留言語言
+    reactions_enabled: # 是否啟用表情回應
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+
+# Self-hosted static assets, optional # 是否自架靜態資源
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+    enabled: # 啟用自架靜態資源（true/false）
+    env: # 指定環境（development/production）
 
-pwa:
-  enabled: true # The option for PWA feature (installable)
+
+pwa: # PWA（漸進式網頁應用）設定
+  enabled: true # 是否啟用 PWA 功能（可安裝）
   cache:
-    enabled: true # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
-    deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+    enabled: true # 是否啟用離線快取
+    deny_paths: # 排除不快取的路徑
+      # - "/example"  # 這些路徑不會被 PWA 快取
 
-paginate: 10
 
-# The base URL of your site
+paginate: 10 # 每頁顯示的文章數量
+
+
+# The base URL of your site # 網站子目錄（通常 GitHub Pages 個人頁面留空，專案頁面填 repo 名稱）
 baseurl: ""
 
-# ------------ The following options are not recommended to be modified ------------------
 
-kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
+# ------------ The following options are not recommended to be modified ------------------ # 以下設定通常不需更動
+
+
+kramdown: # Markdown 解析器設定
+  footnote_backlink: "&#8617;&#xfe0e;" # 註腳返回符號
+  syntax_highlighter: rouge # 語法高亮工具
+  syntax_highlighter_opts: # Rouge 選項
+    css_class: highlight # 高亮 class 名稱
+    # default_lang: console # 預設語言
     span:
-      line_numbers: false
+      line_numbers: false # 行內程式碼不顯示行號
     block:
-      line_numbers: true
-      start_line: 1
+      line_numbers: true # 區塊程式碼顯示行號
+      start_line: 1 # 行號起始值
 
-collections:
+
+collections: # Jekyll collections 設定
   tabs:
-    output: true
-    sort_by: order
+    output: true # 產生對應的靜態頁面
+    sort_by: order # 依 order 排序
 
-defaults:
+
+defaults: # 預設 Front Matter 設定
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: "" # 作用於所有 posts
       type: posts
     values:
-      layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
-      permalink: /posts/:title/
+      layout: post # 預設版型為 post
+      comments: true # 預設開啟留言
+      toc: true # 預設顯示目錄
+      permalink: /posts/:title/ # 文章網址格式
   - scope:
-      path: _drafts
+      path: _drafts # 草稿資料夾
     values:
-      comments: false
+      comments: false # 草稿預設不開啟留言
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs # 作用於 tabs collection
     values:
-      layout: page
-      permalink: /:title/
+      layout: page # 預設版型為 page
+      permalink: /:title/ # 頁面網址格式
 
-sass:
-  style: compressed
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
+sass: # Sass 預處理器設定
+  style: compressed # 輸出壓縮格式
+
+
+compress_html: # HTML 壓縮設定
+  clippings: all # 移除所有片段
+  comments: all # 移除所有註解
+  endings: all # 移除所有結尾空白
+  profile: false # 不啟用 profile
+  blanklines: false # 不保留空白行
   ignore:
-    envs: [development]
+    envs: [development] # 開發環境不壓縮
 
-exclude:
+
+exclude: # 不納入編譯的檔案或資料夾
   - "*.gem"
   - "*.gemspec"
   - docs
@@ -216,11 +214,12 @@ exclude:
   - "*.config.js"
   - "package*.json"
 
-jekyll-archives:
-  enabled: [categories, tags]
+
+jekyll-archives: # Jekyll 分類與標籤歸檔設定
+  enabled: [categories, tags] # 啟用分類與標籤歸檔
   layouts:
-    category: category
-    tag: tag
+    category: category # 分類頁版型
+    tag: tag # 標籤頁版型
   permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+    tag: /tags/:name/ # 標籤頁網址格式
+    category: /categories/:name/ # 分類頁網址格式
